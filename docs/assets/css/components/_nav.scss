@@ -1,0 +1,99 @@
+nav {
+
+    #logo {
+        width: 100%;
+        font-size: 2.5em;
+        color: $white;
+        margin: 0 auto;
+        padding: 20px 0;
+        font-family: "Red Rose";
+        // overflow-x: clip;
+        display: block;
+
+        @include phone {font-size: 1.2em;}
+        @include tablet {font-size: 1.6em;}
+        @include laptop {font-size: 2em;}
+        @include desktop {font-size: 2.5em;}
+
+
+        // Size Debugger
+        // @include phone {color: hotpink}
+        // @include tablet {color: lime}
+        // @include laptop {color: blue}
+        // @include desktop {color: red} 
+        
+    }
+
+    #nav {
+
+        width: 100%;
+        background-color: $purple;
+        border-radius: 10px;
+        font-family: "Red Rose";
+        text-align: center;
+        height: auto;
+        // float: right;
+        // z-index: 10;
+
+
+        
+
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: center;
+            // position: relative;
+            width: auto;
+            // list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            
+            @include phone {padding-bottom: 2vh; padding-right: 4vw;}
+            @include tablet {padding-bottom: 3vh; padding-right: 0vw;}
+            @include laptop {padding-bottom: 3vh;}
+            @include desktop {padding-bottom: 2vh;}
+            
+
+
+            li {
+                
+                list-style: none;
+                position: relative;
+                // padding-right: 10px;
+                // display: inline-block;
+                // display: flex;
+                
+                
+
+                @include phone {width: 24vw; font-size: .7em; padding: 0 2vw;margin: 4px;}
+                @include tablet {width: 22vw; font-size: .85em; padding: 0 7px; margin: 5px;}
+                @include laptop {width: 22vw; font-size: 1.2em; padding: 0 2vw; margin: 5px;}
+                @include desktop {width: 12.5vw; font-size: 1.2em; padding: 0 .75vw; margin: 5px;}
+
+
+                a {
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                    clear: left;
+                    text-decoration: none;
+                    color: $purple;
+                    font-weight: bolder;
+                    padding: 10px;
+                    background-color: $white;
+                    border-radius: 5px;
+                }
+            }
+
+            li:hover {
+                a {
+                    color: $black;
+                }
+            }
+
+        }
+    }
+}

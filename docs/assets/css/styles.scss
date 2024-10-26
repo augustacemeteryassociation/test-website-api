@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'fonts';
+
+@import 'breakpoints';
+
+
+// COMPONENTS
+@import 'components/imgFadeIn';
+@import 'components/main';
+@import 'components/nav';
+@import 'components/footer';
+
+// COMPONENT PAGES
+@import 'components/home';
+@import 'components/members';
+@import 'components/cityContacts';
+
+// WIDGET COMPONENTS
+@import "components/results";
+@import "components/maps";
+@import "components/form";
+
+
+
+// Desktop Version
+@media screen {
+	html {
+		display: none;
+	}
+
+}
